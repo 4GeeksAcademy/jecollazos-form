@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <!-- contenedor mayor -->
+        <div class="container">
+            <div class="card">
+                <!-- encabezado -->
+                <div class="card-header"><strong>Payment form example</strong></div>
+                <!-- alerta roja -->
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <div class="alert alert-danger" role="alert"><strong>Some fields are missing</strong></div>
+                        <!-- card, cvc, amount -->
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="cardNumber">Card #</label>
+                                    <input id="cardNumber" type="text" class="form-control" placeholder="" value="">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="cvc">CVC #</label>
+                                    <input id="cvc" type="text" class="form-control" placeholder="" value="">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="amount">Amount</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">$</span>
+                                        </div>
+                                        <input id="amount" type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- segunda fila nombre y apell -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="firstName">First Name</label>
+                                    <input id="firstName" type="text" class="form-control" placeholder="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName">Last Name</label>
+                                    <input id="lastName" type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <!-- tercera fila ciudad, estado, cp -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="city">City</label>
+                                    <input id="city" type="text" class="form-control" placeholder="">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="state">State</label>
+                                    <select id="state" class="form-control">
+                                        <option>Pick a state</option>
+                                        <select class="form-select" multiple aria-label="Multiple select example">
+                                            <option selected></option>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="postal">Postal Code</label>
+                                    <input id="postal" type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <!-- cuarta fila pagos y mensaje -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>We accept:</label>
+                                    <div class="accept-box mt-2">
+                                        <div class="accept-box mt-2">
+                                            <div class="accept-icons d-flex align-items-center gap-3">
+                                                <label class="d-flex align-items-center gap-2">
+                                                    <i class="fa-brands fa-cc-mastercard fa-2x"
+                                                        style="color:#eb001b;"></i>
+                                                    <input type="radio" name="paymentMethod" value="mastercard"
+                                                        class="form-check-input">
+                                                </label>
+                                                <label class="d-flex align-items-center gap-2">
+                                                    <i class="fa-brands fa-cc-visa fa-2x" style="color:#1a1f71;"></i>
+                                                    <input type="radio" name="paymentMethod" value="visa"
+                                                        class="form-check-input">
+                                                </label>
+                                                <label class="d-flex align-items-center gap-2">
+                                                    <i class="fa-brands fa-cc-amex fa-2x" style="color:#2e77bb;"></i>
+                                                    <input type="radio" name="paymentMethod" value="amex"
+                                                        class="form-check-input">
+                                                </label>
+                                                <label class="d-flex align-items-center gap-2">
+                                                    <i class="fa-brands fa-cc-discover fa-2x"
+                                                        style="color:#f79e1b;"></i>
+                                                    <input type="radio" name="paymentMethod" value="discover"
+                                                        class="form-check-input">
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex flex-column align-items-end">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" class="form-control"
+                                        placeholder="Add any notes here."></textarea>
+                                </div>
+                                <!-- final form botones -->
+                                <div class="card-footer d-flex justify-content-end gap-2 px-0"
+                                    style="border-top:1px solid hwb(206 85% 9% / 0.898); background:transparent;">
+                                    <button type="button" class="btn btn-secondary">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Send</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
+<!-- <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Payment form example</span>
+                </div>
+                <div class="container-fluid">
+                    <div class="alert alert-danger" role="alert">
+                        Some fields are missing
+                    </div>
+                </div> -->
